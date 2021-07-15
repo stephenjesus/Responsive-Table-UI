@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.breadcrumb {
+  background: #dfdfdf;
+}
+.p-breadcrumb ul li.p-breadcrumb-chevron {
+  margin: 0 0.5rem 0 0.5rem;
+  color: #495057;
+  font-size: 11px;
+  margin-top: 3px;
+}
+.pi-home:before {
+  content: "\e925";
+  color: #f58020 !important;
+  font-size: 21px;
+}
+.p-breadcrumb ul li:last-child .p-menuitem-text {
+  font-size: 14px;
+}
+.p-breadcrumb {
+  background: #dfdfdf;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dataTablePadding {
+  padding: 5%;
+  background: #f5f5f5;
+  padding-top: 3%;
+}
+.p-datatable .p-datatable-tbody > tr > td {
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-datatable .p-datatable-thead > tr > th {
+  font-size: 15px;
+  font-weight: 900;
+  background-color: #fff!important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.p-datatable .p-datatable-tbody > tr:nth-of-type(odd) {
+  background-color: #f5f5f5!important;
+}
+.p-datatable .p-datatable-tbody > tr:nth-of-type(even) {
+  background-color: #fff!important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.manageCourses {
+  padding-left: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 16px;
+  font-weight: 700;
 }

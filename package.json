@@ -1,11 +1,15 @@
 {
-  "name": "my-app",
+  "name": "Examly",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/data-grid": "^4.0.0-alpha.33",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "primeicons": "^4.1.0",
+    "primereact": "^6.5.0-rc.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
