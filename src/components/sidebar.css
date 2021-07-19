@@ -1,0 +1,176 @@
+#body-row {
+    margin-left:0;
+    margin-right:0;
+    position: absolute;
+    z-index: 10;
+}
+#sidebar-container {
+    min-height: calc(100vh - ((1.79 * 12px) + 60px));   
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 300px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    z-index: 300;
+    position: absolute!important;
+}
+
+.sidebar-expanded .sidnav-footer {
+    opacity: 1;
+    transition-property: opacity;
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+}
+
+.sidebar-expanded p {
+    opacity: 1;
+    transition-property: opacity;
+    transition-delay: 0.2s;
+    transition-duration: 0.6s;
+}
+
+.sidebar-collapsed {
+    width: 65px;
+    transition-property: width;
+    transition-duration: 0.7s;
+    position: absolute;
+}
+
+.sidebar-collapsed p {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.sidebar-collapsed .sidnav-footer {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0s;
+}
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: #43425d;
+}
+
+.list-group {
+    padding-left: 0px;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: #fff;
+    height: 35px;
+}
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #333;    
+    height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+.sidnav {
+    flex: 2.3;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidnav-optionList {
+    padding-right: 8px;
+}
+
+.sidnav-option--active {
+    padding: 20px 15px 15px 20px;
+    background-color: #f5f7f9;
+    font-size: 14px;
+    font-weight: normal;
+    color: #43425d;
+    display: flex;
+    align-items: center;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    height: 60px;
+}
+
+.sidnav-option--active::before {
+    content: '';
+    background: #398cd4;
+    width: 5px;
+    padding: 30px 0;
+    margin: -2px 0 4px;
+    position: absolute;
+    left: 0%;
+    align-self: center;
+}
+
+.sidnav-option--active img {
+    margin-right: 0px;
+    height: 20px;
+    color:#DDDDDD;
+}
+
+.sidnav-option--active p {
+    margin-left: 20px;
+}
+
+.sidnav-option {
+    padding: 20px 15px 15px 20px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: left;
+    color: #43425d;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 60px;
+}
+
+.sidnav-option img {
+    height:20px;
+    color:#DDDDDD;
+}
+
+.sidnav-option p {
+    margin-left: 20px;
+    flex: 15;
+}
