@@ -90,7 +90,7 @@ const renderSideMenu = (inputFields) => {
             makeOptionActive(e);
             window.location.pathname.replace(value);
         }}>
-        <img src={image.default} />
+        <img alt="defaultIcon" src={image.default} />
         <p>{label}</p>
     </div>
 }
@@ -100,7 +100,7 @@ const expandCollapseSideBar = (className) => {
     if (sideBarElement) sideBarElement.classList.value = className;
 }
 
-export default (props) => {
+export const Sidebar = (props) => {
     let { currentPath } = props;
     const sideBarFormPayload = generateUrbanMenu(currentPath)
     return (
